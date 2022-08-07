@@ -11,4 +11,4 @@
 ### Relevant Articles: 
 - [Net::Kafka](https://metacpan.org/pod/Net::Kafka)
 - [Apache Kafka Quickstart](https://kafka.apache.org/quickstart)
-- [perl-Net-Kafka](https://kafka.apache.org/quickstart](https://github.com/bookingcom/perl-Net-Kafka)
+- [perl-Net-Kafka](https://github.com/bookingcom/perl-Net-Kafka)
