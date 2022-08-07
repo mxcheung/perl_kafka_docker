@@ -1,0 +1,57 @@
+docker build -t my-alpine-perl-app .
+docker run -p 9092:9092 -it --rm --name my-running-app my-alpine-perl-app
+docker run -it --rm --name my-running-app my-alpine-perl-app
+
+
+cpanm install Net::Kafka
+
+
+perldoc -l Net::Kafka
+
+perl -MNet::Kafka -e 1
+
+perl -MTry::Tiny -e 1
+
+perldoc -l Try::Tiny
+
+
+cpan -D Net::Kafka
+
+
+
+C:\Docker\kafka\kafka_2.13-3.2.1\bin\windows>zookeeper-server-start.bat ..\..\config\zookeeper.properties
+
+C:\Docker\kafka\kafka_2.13-3.2.1\bin\windows>kafka-server-start.bat ..\..\config\server.properties
+
+kafka-topics.bat --create --topic quickstart-events --bootstrap-server localhost:9092
+
+kafka-console-producer.bat --topic quickstart-events --bootstrap-server localhost:9092
+This is my first event
+This is my second event
+This is my third event
+This is my fourth event
+This is my fifth event
+hello2.pl
+hello.pl
+
+kafka-console-consumer.bat --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+
+
+kafka-console-producer.bat --topic my_topic --bootstrap-server localhost:9092
+
+
+kafka-console-consumer.bat --topic my_topic --from-beginning --bootstrap-server localhost:9092
+
+
+my_topic
+
+
+kafka-console-consumer.bat --topic quickstart-events --from-beginning --bootstrap-server 192.163.0.16:9092
+192.163.0.16
+
+
+docker rmi $(docker images --filter “dangling=true” -q --no-trunc)
+
+
+hello2.pl
+hello.pl
