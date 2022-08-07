@@ -10,3 +10,4 @@
 
 ### Relevant Articles: 
 - [Net::Kafka](https://metacpan.org/pod/Net::Kafka)
+- [Apache Kafka Quickstart](https://kafka.apache.org/quickstart)
