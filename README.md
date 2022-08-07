@@ -9,4 +9,4 @@
 
 
 ### Relevant Articles: 
-- [Net::Kafka]([https://docs.spring.io/spring-batch/trunk/apidocs/org/springframework/batch/item/file/transform/FixedLengthTokenizer.html](https://metacpan.org/pod/Net::Kafka))
+- [Net::Kafka](https://docs.spring.io/spring-batch/trunk/apidocs/org/springframework/batch/item/file/transform/FixedLengthTokenizer.html)
