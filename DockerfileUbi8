@@ -1,0 +1,24 @@
+FROM redhat/ubi8:latest
+
+RUN dnf -y --disableplugin=subscription-manager module enable ruby:2.6 && \
+    dnf -y --disableplugin=subscription-manager --setopt=tsflags=nodocs install \
+    # ruby 2.6 via module
+    ruby-devel \
+    # build utilities
+    gcc-c++ git make redhat-rpm-config \
+    # libraries
+    postgresql-devel openssl-devel libxml2-devel jq \
+    # cpanminus
+    cpanminus \
+    #ImageMagick deps
+    autoconf libpng-devel libjpeg-devel librsvg2 \ 
+    # For the rdkafka gem
+    cyrus-sasl-devel zlib-devel openssl-devel diffutils && \
+    dnf clean all
+
+
+
+COPY . /usr/src/myapp
+
+WORKDIR /usr
+
