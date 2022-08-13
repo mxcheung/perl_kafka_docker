@@ -53,5 +53,8 @@ kafka-console-consumer.bat --topic quickstart-events --from-beginning --bootstra
 docker rmi $(docker images --filter “dangling=true” -q --no-trunc)
 
 
+DB2_DSClient_V10.5_Linux_x86-64.tar.gz
+
+
 hello2.pl
 hello.pl
